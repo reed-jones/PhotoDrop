@@ -1,0 +1,65 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "welcome";
+
+.image-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.featherlight {
+  &-content {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  &-next,
+  &-previous {
+    top: 0;
+    right: 0;
+    left: 80%;
+    overflow: hidden;
+    span {
+      width: 100%;
+    }
+    @media only screen and (max-width: 1024px) {
+      top: 0;
+      right: 0;
+      left: 85%;
+    }
+  }
+
+  &-previous {
+    left: 0;
+    right: 80%;
+    span {
+      left: auto;
+      right: 0;
+    }
+    @media only screen and (max-width: 1024px) {
+      left: 0;
+      right: 85%;
+    }
+  }
+
+  &-next {
+    span {
+      right: auto;
+      left: 0;
+    }
+  }
+  &-close-icon {
+    position: fixed;
+    line-height: 45px;
+    width: 45px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+

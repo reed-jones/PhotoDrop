@@ -1,0 +1,25 @@
+.welcome{
+	color:#fff;
+	width:100%;
+	padding:150px 0;
+	margin:{
+		top:-22px;
+		bottom:30px;
+	}
+	text-align:center;
+	background:{
+		image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6)), url('/img/mount.jpg');
+		repeat: no-repeat;
+		position: center;
+		size:cover;
+	}
+
+	h1{
+		font-size: 4em;
+		text-shadow: 2px 2px 5px #000;
+	}
+	p{
+		font-size: 2em;
+		text-shadow: 2px 2px 5px #000;
+	}
+}
